@@ -107,7 +107,7 @@ fetch('https://www.substr.co/api/request',
     }
   ).then(function(response) {
   response.json().then(function(myJson) {
-    console.log(myJson); // output => {"success":true}
+    console.log(myJson); // output => {success:true}
   });
 });
 ```
