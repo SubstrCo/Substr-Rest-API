@@ -55,17 +55,25 @@ fetch('http://www.substr.co/api/fee/jaro').then(function(response) {
 ```javascript
 const createRequest  = await fetch('https://www.substr.co/api/request', 
     {
-      headers: {authorization: 'Bearer AIzaSyA8pe8s2-tPaJpraIF6knVZnRLqLK1RCAw' },
+      headers: {
+        authorization: 'Bearer AIzaSyA8pe8s2-tPaJpraIF6knVZnRLqLK1RCAw' 
+      },
       method: 'POST',
-      body: JSON.stringify({clientName: 'Mike Tyson', contactNumber: '09997796417', 
-      items: [ 
-        {itemName: 'Milo', quantity: 3}, 
-        {itemName: 'Bear Brand', quantity: 10}, 
-        {itemName: 'MikMik', quantity: 2} 
-      ],
-      deliveryAddress: 'San Isidro, Jaro, Ilo-ilo City', 
-      branchAddress: 'IS Atrium', 
-      amount: 1500, note:'Juan Carlos Store' }),
+      body: JSON.stringify(
+        {
+          clientName: 'Mike Tyson', 
+          contactNumber: '09997796417', 
+          items: [ 
+            {itemName: 'Milo', quantity: 3}, 
+            {itemName: 'Bear Brand', quantity: 10}, 
+            {itemName: 'MikMik', quantity: 2} 
+          ],
+          deliveryAddress: 'San Isidro, Jaro, Ilo-ilo City', 
+          branchAddress: 'IS Atrium', 
+          amount: 1500, 
+          note:'Juan Carlos Store' 
+        }
+      ),
     }
   );
 const result = await createRequest.json();
@@ -77,17 +85,25 @@ console.log(result) // {success: true}
 ```javascript
 fetch('https://www.substr.co/api/request', 
     {
-      headers: {authorization: 'Bearer AIzaSyA8pe8s2-tPaJpraIF6knVZnRLqLK1RCAw' },
+      headers: {
+        authorization: 'Bearer AIzaSyA8pe8s2-tPaJpraIF6knVZnRLqLK1RCAw' 
+      },
       method: 'POST',
-      body: JSON.stringify({clientName: 'Mike Tyson', contactNumber: '09997796417', 
-      items: [ 
-        {itemName: 'Milo', quantity: 3}, 
-        {itemName: 'Bear Brand', quantity: 10}, 
-        {itemName: 'MikMik', quantity: 2} 
-      ],
-      deliveryAddress: 'San Isidro, Jaro, Ilo-ilo City', 
-      branchAddress: 'IS Atrium', 
-      amount: 1500, note:'Juan Carlos Store' }),
+      body: JSON.stringify(
+        {
+          clientName: 'Mike Tyson', 
+          contactNumber: '09997796417', 
+          items: [ 
+            {itemName: 'Milo', quantity: 3}, 
+            {itemName: 'Bear Brand', quantity: 10}, 
+            {itemName: 'MikMik', quantity: 2} 
+          ],
+          deliveryAddress: 'San Isidro, Jaro, Ilo-ilo City', 
+          branchAddress: 'IS Atrium', 
+          amount: 1500, 
+          note:'Juan Carlos Store' 
+        }
+      ),
     }
   ).then(function(response) {
   response.json().then(function(myJson) {
