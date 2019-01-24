@@ -80,7 +80,12 @@ fetch('https://www.substr.co/api/request',
       headers: {authorization: 'Bearer AIzaSyA8pe8s2-tPaJpraIF6knVZnRLqLK1RCAw' },
       method: 'POST',
       body: JSON.stringify({clientName: 'Mike Tyson', contactNumber: '09997796417', 
-      items: [ {itemName: 'Milo', quantity: 3}, {itemName: 'Bear Brand', quantity: 10}, {itemName: 'MikMik', quantity: 2} ] ,deliveryAddress: 'San Isidro, Jaro, Ilo-ilo City', 
+      items: [ 
+        {itemName: 'Milo', quantity: 3}, 
+        {itemName: 'Bear Brand', quantity: 10}, 
+        {itemName: 'MikMik', quantity: 2} 
+      ],
+      deliveryAddress: 'San Isidro, Jaro, Ilo-ilo City', 
       branchAddress: 'IS Atrium', 
       amount: 1500, note:'Juan Carlos Store' }),
     }
