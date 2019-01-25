@@ -42,7 +42,7 @@ fetch('http://www.substr.co/api/fee/jaro').then(function(response) {
 
 ## Create Request
 
-### POST `https://www.substr.co/api/request`
+### POST `https://www.substr.co/api/request/:apiKey`
 
 #### Fields
 
@@ -59,10 +59,7 @@ fetch('http://www.substr.co/api/fee/jaro').then(function(response) {
 `ES6 & up`
 
 ```javascript
-const response = await fetch('https://www.substr.co/api/request', {
-  headers: {
-    authorization: 'Basic {API Key}',
-  },
+const response = await fetch('https://www.substr.co/api/request/{apiKey}', {
   method: 'POST',
   body: JSON.stringify({
     clientName: 'Mike Tyson',
@@ -85,10 +82,7 @@ console.log(result); // output => {success: true, requestId: 1234567890}
 `Traditional`
 
 ```javascript
-fetch('https://www.substr.co/api/request', {
-  headers: {
-    authorization: 'Basic {API-Key}',
-  },
+fetch('https://www.substr.co/api/request/{apiKey}', {
   method: 'POST',
   body: JSON.stringify({
     clientName: 'Mike Tyson',
