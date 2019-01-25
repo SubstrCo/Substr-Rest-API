@@ -48,12 +48,7 @@ fetch('http://www.substr.co/api/fee/jaro').then(function(response) {
 
 - clientName: {string}
 - contactNumber: {string/number}
-- items: [
-
-  `{ itemName: {string}, quantity: {number} }`
-
-  ]
-
+- items: `[ { itemName: {string}, quantity: {number} } ]`
 - deliveryAddress: {string}
 - branchAddress: {string}
 - amount: {number}
