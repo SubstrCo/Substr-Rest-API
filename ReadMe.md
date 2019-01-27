@@ -33,7 +33,7 @@ console.log(serviceFee); // output => { serviceFee: 90 }
 `Traditional`
 
 ```javascript
-fetch('http://www.substr.co/api/fee/jaro').then(function(response) {
+fetch('https://www.substr.co/api/fee/jaro').then(function(response) {
   response.json().then(function(serviceFee) {
     console.log(serviceFee); // output => { serviceFee: 90 }
   });
@@ -121,7 +121,7 @@ console.log(status); // output => { status: 'pending/inProgress/completed' }
 `Traditional`
 
 ```javascript
-fetch('http://www.substr.co/api/request-status/1234567890').then(function(response) {
+fetch('https://www.substr.co/api/request-status/1234567890').then(function(response) {
   response.json().then(function(status) {
     console.log(status); // output => { status: 'pending/inProgress/completed' }
   });
