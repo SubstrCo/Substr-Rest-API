@@ -103,3 +103,27 @@ fetch('https://www.substr.co/api/request/{apiKey}', {
   });
 });
 ```
+
+## Request Status
+
+### GET `https://www.substr.co/api/request-status/{requestId}`
+
+##### Example using fetch
+
+`ES6 & up`
+
+```javascript
+const response = await fetch('https://www.substr.co/api/request-status/1234567890');
+const status = await response.json();
+console.log(status); // output => { status: 'pending/inProgress/completed' }
+```
+
+`Traditional`
+
+```javascript
+fetch('http://www.substr.co/api/request-status/1234567890').then(function(response) {
+  response.json().then(function(status) {
+    console.log(status); // output => { status: 'pending/inProgress/completed' }
+  });
+});
+```
